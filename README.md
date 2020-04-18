@@ -1,6 +1,6 @@
 # INF124-e-commerce-website
 
-##Acknowledgements
+## Acknowledgements
 
 Text Entry Allignment on order forms - [stackoverflow post](https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html)
 
