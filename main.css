@@ -16,6 +16,7 @@
   clear: both;
 }
 
+/* CSS stylistic properties */
 .column:hover {
   background-color: #ddd;
 }
@@ -25,29 +26,31 @@
   color: white;
 }
 
-/* CSS stylistic properties */
 h1{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 50px;
   text-align: center;
-  color: #649CA8;
-  background-color: white;
+  color: rgb(194, 156, 209);
+  background-color: rgb(221, 214, 236);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h2{
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 20px;
   color: white;
-  background-color: #649CA8;
+  background-color: #B1D7D8;
 }
 
 body{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
+  background-color: white;
 }
 
 img{
-  /*200px*/
   width: 263px; 
   height: 263px;
+  background-color: white;
 }
