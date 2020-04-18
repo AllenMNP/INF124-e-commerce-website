@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 20%;
   padding: 10px;
 }
 
@@ -10,4 +14,40 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.column:hover {
+  background-color: #ddd;
+}
+
+.column.active {
+  background-color: #666;
+  color: white;
+}
+
+/* CSS stylistic properties */
+h1{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #649CA8;
+  background-color: white;
+}
+
+h2{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  color: white;
+  background-color: #649CA8;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+}
+
+img{
+  /*200px*/
+  width: 263px; 
+  height: 263px;
 }
