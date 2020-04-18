@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<style>
+  .button {
+  	background-color: #26AC4C; /* Custom Green Color */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+</style>
+<html>
+  <head>
+	<meta charset="utf-8">
+	  <title> Almond Joy </title>
+  </head>
+  <body>
+	<h1> Almond Joy </h1>
+	<img src="candyImages/AlmondJoy.png" alt="AJpic1" width="300" height="300"/>
+	<img src="candyImages/almondjoy2.jpg" alt="AJpic2" width="300" height="300"/>
+	<img src="candyImages/almondjoy3.jpg" alt="AJpic3" width="250" height="150"/>
+	<h3> $0.99 </h3>
+	<h2> Product Details </h2>
+	<ul>
+      <li class="list">Coconut filling and whole almonds covered in milk chocolate</li>
+      <li class="list">Perfect for enjoying and sharing a sweet snack
+</li> 
+      <li class="list">Delicious on its own or incorporated into dessert recipes</li>
+      <li class="list">A gluten-free and kosher candy bar</li>
+      <li class="list"><strong>Contains:</strong> milk, peanuts, soy, almonds, sugar</li>
+	</ul>
+	<button class="button" onclick="orderProduct()">Buy now</button>
+  </body>
+</html>
+
+<script>
+  function orderProduct(){
+	location.href="order-page.html";
+  }
+</script>

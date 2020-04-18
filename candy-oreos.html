@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+  .button {
+  	background-color: #26AC4C; /* Custom Green Color */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+</style>
+<html>
+  <head>
+	<meta charset="utf-8">
+	  <title> Candy Corn Oreos </title>
+  </head>
+  <body>
+	<h1> LIMITED EDITION - Candy Corn Oreos </h1>
+	<img src="candyImages/CandyOreo.jpg" alt="COpic1" width="300" height="300"/>
+	<img src="candyImages/candyoreos2.jpeg" alt="COpic2" width="300" height="250"/>
+	<img src="candyImages/candyoreos3.jpg" alt="COpic3" width="300" height="300"/>
+	<h3> $8.23 </h3>
+	<h2> Product Details </h2>
+	<ul>
+      <li class="list">Limited Edition Fall seasonal Oreo cookies</li>
+      <li class="list">21 cookies per package
+</li> 
+      <li class="list">NET WT 10.7 OZ</li>
+      <li class="list"><strong>Contains:</strong> sugar, enriched flour, high fructose corn syrup</li>
+	</ul>
+	<button class="button" onclick="orderProduct()">Buy now</button>
+  </body>
+</html>
+
+<script>
+  function orderProduct(){
+	location.href="order-page.html";
+  }
+</script>
