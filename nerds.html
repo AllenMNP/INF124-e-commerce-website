@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+  .button {
+  	background-color: #26AC4C; /* Custom Green Color */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+</style>
+<html>
+  <head>
+	<meta charset="utf-8">
+	  <title> Nerds </title>
+  </head>
+  <body>
+	<h1> Nerds </h1>
+	<img src="candyImages/nerds.png" alt="nerdspic1" width="300" height="300"/>
+	<img src="candyImages/nerds2.png" alt="nerdspic2" width="300" height="300"/>
+	<img src="candyImages/nerds3.jpg" alt="nerdspic3" width="250" height="150"/>
+	<h3> $10.39 </h3>
+	<h2> Product Details </h2>
+	<ul>
+      <li class="list">Tiny, tangy, and crunchy candy</li>
+      <li class="list">Grape candy is in one side of the box, and Strawberry in the other side
+</li> 
+      <li class="list">Great for holidays & special occasions</li>
+      <li class="list"><strong>Contains:</strong> dexstrose, corn syrup, sugar, gelatin</li>
+	</ul>
+	<button class="button" onclick="orderProduct()">Buy now</button>
+  </body>
+</html>
+
+<script>
+  function orderProduct(){
+	location.href="order-page.html";
+  }
+</script>

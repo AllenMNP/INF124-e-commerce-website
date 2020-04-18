@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<style>
+  .button {
+  	background-color: #26AC4C; /* Custom Green Color */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+</style>
+<html>
+  <head>
+	<meta charset="utf-8">
+	  <title> Rice Krispies</title>
+  </head>
+  <body>
+	<h1> Rice Krispies </h1>
+	<img src="candyImages/RKrispies.png" alt="RKpic1" width="300" height="300"/>
+	<img src="candyImages/rk2.jpg" alt="RKpic2" width="300" height="325"/>
+	<img src="candyImages/rk3.jpg" alt="RKpic3" width="300" height="300"/>
+	<h3> $9.49 </h3>
+	<h2> Product Details </h2>
+	<ul>
+	  <li class="list"> Your family will enjoy the timeless taste of this toasted rice cereal that is deliciously fat free!</li>
+      <li class="list">Crispy Marshmallow Squares</li>
+      <li class="list">No High Fructose Corn Syrup
+</li> 
+      <li class="list">90 Calories Per Bar</li>
+      <li class="list">40 Original Size Bars</li>
+      <li class="list"><strong>Contains:</strong> rice, sugar, salt, malt flavor, corn syrup, fructose, vegetable oil, dextrose, gelatin</li>
+	</ul>
+	<button class="button" onclick="orderProduct()">Buy now</button>
+  </body>
+</html>
+
+<script>
+  function orderProduct(){
+	location.href="order-page.html";
+  }
+</script>
