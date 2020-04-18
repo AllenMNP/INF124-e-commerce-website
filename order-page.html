@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- CSS for text entry styling -->
+<style type="text/css">
+  form  { display: table;      }
+  p     { display: table-row;  }
+  label { display: table-cell; }
+  input { display: table-cell; }
+</style>
+
+<html lang="en" dir="ltr">
+  <head>
+   	<meta charset="utf-8">
+	  <title> CandyRus Order Form</title>
+  </head>
+	<body>
+	  <h1> CandyRus Order Form </h1>
+      <img src="companylogo.png" width="200" height="200"/>
+		<form>
+		  <p>
+		  	<!--product entry-->
+		  	<label for="product">Product:</label>
+		  	<select id="product">
+		  	  <option value="pbcup">Peanut Butter Cups</option>
+		  	  <option value="candycanes">Candy Canes</option>
+		  	  <option value="almondjoy">Almond Joy</option>
+		  	  <option value="candyoreos">Candy Corn Oreos</option>
+		  	  <option value="fruitrollup">Fruit Rollup</option>
+		  	  <option value="nerds">Nerds</option>
+		  	  <option value="swedishfish">Swedish Fish</option>
+		  	  <option value="reesespieces">Reese's Pieces</option>
+		  	  <option value="skittles">Skittles</option>
+		  	  <option value="ricekrispies">Rice Krispies</option>
+		  	</select>
+		  </p>
+		  <p>
+		  	<!--quantity entry-->
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" min="1" max="100" 
+			name="quantity" value=1 required><br>
+		  </p>
+		  <h3> Contact Information </h3><br>
+		  <p>
+		  	<!--firstname entry-->
+		 	<label for="firstname">First name:</label>
+			<input type="text" id="firstname" minlength="1" 
+			name="firstname" required>
+		  </p>
+		  <p>
+		  	<!--lastname entry-->
+			<label for="lastname">Last name:</label>
+			<input type="text" id="lastname" minlength="1" 
+			name="lastname" required>
+		  </p>
+		  <p>
+		  	<!--phonenumber entry-->
+			<label for="phonenumber">Phone number:</label>
+			<input type="tel" id="phonenumber" name="phonenumber" placeholder="e.g. 123-456-7890" 
+			pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+			title="e.g. 123-456-7890" required>
+		  </p>
+		  <h3> Shipping Information </h3>
+		  <p>
+		  	<!--address1 entry-->
+		  	<label for="address1">Address Line 1</label>
+		  	<input type="text" id="street" name="street" 
+		  	placeholder="Street address, P.O.box, etc." 
+		  	maxlength="30" required>
+		  </p>
+		  <p>
+		  	<!--address2 entry-->
+		  	<label for="address2">Address Line 2</label>
+		  	<input type="text" id="street" name="street" maxlength="30">
+		  </p>
+		  <p>
+		  	<!--city entry-->
+		  	<label for="city">City</label>
+		  	<input type="text" id="city" name="city" 
+		  	placeholder="e.g. Irvine" maxlength="30" required>
+		  </p>
+		  <p>
+		  	<!--state entry-->
+		  	<label for="state">State/Province/Region</label>
+		  	<input type="text" id="state" name="state" 
+		  	placeholder="e.g. CA" maxlength="30" required>
+		  </p>
+		  <p>
+		  	<!--country entry-->
+		  	<label for="country">Country</label>
+		  	<input type="text" id="country" name="country" placeholder="e.g. USA" maxlength="30" required>
+		  </p>
+		  <p>
+		  	<!--shipment (duration) entry-->
+		  	<label for="shipment">Shipping method:</label>
+		  	<select id="shipment">
+		  	  <option value="standardship">$3.00 - Standard Shipping (5-7 business days)</option>
+		  	  <option value="expressship">$8.00 - Express Shipping (2-5 business days)</option>
+		  	</select>
+		  </p>
+		  <h3> Payment Information </h3>
+		  <p>
+		  	<!--cardnumber entry-->
+		  	<label for="cardnumber">Card Number</label>
+		  	<input type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1111-2222-3333-4444" 
+		  	pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" 
+		  	title="e.g. 1111-2222-3333-4444" required>
+		  </p>
+		  <p>
+		  	<!--expiration entry-->
+		  	<label for="expiration">Expires</label>
+		  	<input type="text" id="expiration" name="expiration"
+		  	placeholder="MM/YYYY" pattern="((0[1-9]|1[0-2])\/[12]\d{3})" 
+		  	title="e.g. 02/2020" required>
+		  </p>
+		  <p>
+		  	<!--cvv entry-->
+		  	<label for="cvv">CVV code</label>
+		  	<input type="text" id="cvv" name="cvv"
+		    pattern="[0-9]{3}" 
+		  	title="CVV is the last 3 digits on the back of your card."required>
+		  </p>
+		  <input type="submit">
+		</form>
+	</body>
+</html>

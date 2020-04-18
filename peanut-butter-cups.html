@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	  <title> Peanut Butter Cups </title>
+	  <link rel="stylesheet" href="product.css">
+  </head>
+
+  <body>
+	<h1>Peanut Butter Cups</h1>
+	<img src="candyImages/PButter.jpg" alt="PButterPic1"/>
+	<img src="candyImages/PButter2.jpg" alt="PButterPic2"/>
+	<img src="candyImages/PButter3.jpg" alt="PButterPic3"/>
+	<h3>$7.99</h3>
+	<h2>Product Details</h2>
+	<ul>
+      <li class="list">Made in-house</li>
+      <li class="list">Creamy peanut butter filling</li> 
+      <li class="list">Crisp chocolate in every bite!</li>
+      <li class="list">Vegetarian/gluten free</li>
+      <li class="list"><strong>Contains:</strong> peanut butter, maple syrup, powdered sugar,
+        <br>allspice, vanilla extract, semisweet chocolate, sea salt</li>
+	</ul>
+	<button class="button" onclick="orderProduct()">Buy now</button>
+  </body>
+</html>
+
+<script>
+  function orderProduct(){
+	location.href="order-page.html";
+  }
+</script>

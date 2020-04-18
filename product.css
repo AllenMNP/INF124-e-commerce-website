@@ -1,0 +1,41 @@
+/* CSS stylistic properties for decription pages */
+
+h1{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(194, 156, 209);
+    background-color: rgb(221, 214, 236);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  h2{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    color: white;
+    background-color: #B1D7D8;
+  }
+  
+  body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+  }
+  
+  img{
+    width: 300px; 
+    height: 300px;
+    background-color: white;
+  }
+  
+  .button {
+    background-color: #26AC4C; /* Custom Green Color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
