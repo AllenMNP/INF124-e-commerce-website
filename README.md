@@ -8,6 +8,10 @@ Button Styling for Form Submissions  - [w3schools](https://www.w3schools.com/css
 
 Regex MM/YYYY Date Matching - [link](https://www.thewebblinders.in/programming/article/JavaScript-regular-expressions-for-validating-YYYYMM-and-MMYYYY-patterns-6010)
 
+Mailto after Form Validation - [sitepoint](https://www.sitepoint.com/community/t/how-to-validate-a-form-with-javascript-prior-to-mailto-action-or-change-a-form-action-using-javascript/308475)
+
+Mailto - [rapidtables](https://www.rapidtables.com/web/html/mailto.html)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
