@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	  <title> Nerds </title>
 	  <link rel="stylesheet" href="product.css">
+	  <script src="product.js"> </script>
   </head>
 
   <body>
 	<h1> Nerds </h1>
-	<img src="candyImages/nerds.png" alt="nerdspic1" width="300" height="300"/>
-	<img src="candyImages/nerds2.png" alt="nerdspic2" width="300" height="300"/>
-	<img src="candyImages/nerds3.jpg" alt="nerdspic3" width="250" height="150"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/nerds.png" alt="nerdspic1" width="300" height="300"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/nerds2.png" alt="nerdspic2" width="300" height="300"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/nerds3.jpg" alt="nerdspic3" width="250" height="150"/>
 	<h3> $10.39 </h3>
 	<h2> Product Details </h2>
 	<ul>
@@ -23,9 +24,3 @@
 	<button class="button" onclick="orderProduct()">Buy now</button>
   </body>
 </html>
-
-<script>
-  function orderProduct(){
-	location.href="order-page.html";
-  }
-</script>

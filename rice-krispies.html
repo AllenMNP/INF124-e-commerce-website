@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	  <title> Rice Krispies</title>
 	  <link rel="stylesheet" href="product.css">
+	  <script src="product.js"> </script>
   </head>
 
   <body>
 	<h1> Rice Krispies </h1>
-	<img src="candyImages/RKrispies.png" alt="RKpic1" width="300" height="300"/>
-	<img src="candyImages/rk2.jpg" alt="RKpic2" width="300" height="325"/>
-	<img src="candyImages/rk3.jpg" alt="RKpic3" width="300" height="300"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/RKrispies.png" alt="RKpic1" width="300" height="300"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/rk2.jpg" alt="RKpic2" width="300" height="325"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/rk3.jpg" alt="RKpic3" width="300" height="300"/>
 	<h3> $9.49 </h3>
 	<h2> Product Details </h2>
 	<ul>
@@ -25,9 +26,3 @@
 	<button class="button" onclick="orderProduct()">Buy now</button>
   </body>
 </html>
-
-<script>
-  function orderProduct(){
-	location.href="order-page.html";
-  }
-</script>
