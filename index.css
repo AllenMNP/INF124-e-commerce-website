@@ -20,6 +20,7 @@ h2{
     font-size: 20px;
     text-align: left;
     color: #649CA8;
+    margin-left: 10px;
 }
 
 li{
@@ -32,4 +33,5 @@ li{
 h4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-left: 10px;
 }
