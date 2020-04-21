@@ -1,4 +1,22 @@
 /* CSS stylistic properties for decription pages */
+.nav{
+  background-color: white; 
+  list-style-type: none;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: gray;
+  margin-left: -30px;
+}
+
 h1{
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 50px;
