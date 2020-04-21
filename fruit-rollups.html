@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<style>
-  .button {
-  	background-color: #26AC4C; /* Custom Green Color */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-  }
-</style>
 <html>
   <head>
 	<meta charset="utf-8">
 	  <title> Fruit Roll-Ups </title>
+	  <link rel="stylesheet" href="product.css">
+	  <script src="product.js"> </script>
   </head>
+
   <body>
+	<ul class="nav">
+		<li><a href="candyTable.html">< Back</a></li>
+	</ul>
 	<h1> Fruit Roll-Ups </h1>
-	<img src="candyImages/FRollup.jpg" alt="FRpic1" width="300" height="300"/>
-	<img src="candyImages/frollup2.jpg" alt="FRpic2" width="300" height="300"/>
-	<img src="candyImages/frollup3.jpg" alt="FRpic3" width="250" height="150"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/FRollup.jpg" alt="FRpic1"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/frollup2.jpg" alt="FRpic2"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/frollup3.jpg" alt="FRpic3"/>
 	<h3> $25.97 </h3>
 	<h2> Product Details </h2>
 	<ul>
       <li class="list">Naturally flavored: fruit-flavored, gummy treats made with no artificial flavors for a delicious snack</li>
-      <li class="list">Wholesome: contains a good source of Vitamin C for a sweet snack you can feel great about
-</li> 
-      <li class="list">On-the-go Snack: 50 calories per roll, These individual snacks are the perfect addition to any day out</li>
+      <li class="list">Wholesome: contains a good source of Vitamin C for a sweet snack you can feel great about</li> 
+      <li class="list">On-the-go snack: 50 calories per roll, these individual snacks are the perfect addition to any day out</li>
       <li class="list"><strong>Contains:</strong> corn syrup, dried corn syrup, sugar, pear puree conentrate, palm oil</li>
 	</ul>
 	<button class="button" onclick="orderProduct()">Buy now</button>
   </body>
 </html>
-
-<script>
-  function orderProduct(){
-	location.href="order-page.html";
-  }
-</script>

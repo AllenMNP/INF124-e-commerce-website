@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<style>
-  .button {
-  	background-color: #26AC4C; /* Custom Green Color */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-  }
-</style>
 <html>
   <head>
 	<meta charset="utf-8">
-	  <title> Reese's Pieces</title>
+	  <title> Reese's Pieces </title>
+	  <link rel="stylesheet" href="product.css">
+	  <script src="product.js"> </script>
   </head>
+
   <body>
+	<ul class="nav">
+		<li><a href="candyTable.html">< Back</a></li>
+	</ul>
 	<h1> Reese's Pieces </h1>
-	<img src="candyImages/Reese'sPieces.png" alt="rpspic1" width="300" height="300"/>
-	<img src="candyImages/rp2.jpg" alt="rppic2" width="300" height="300"/>
-	<img src="candyImages/rp3.webp" alt="rppic3" width="300" height="200"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/Reese'sPieces.png" alt="rpspic1"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/rp2.jpg" alt="rppic2"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="candyImages/rp3.webp" alt="rppic3"/>
 	<h3> $6.99 </h3>
 	<h2> Product Details </h2>
 	<ul>
 	  <li class="list">Big peanut butter taste in a crunchy candy shell</li>
       <li class="list">Perfect for on-the-go snacking and sharing on movie night</li>
-      <li class="list">Share bags of candy for parties, movies or everyday snacking
-</li> 
+      <li class="list">Share bags of candy for parties, movies or everyday snacking</li> 
       <li class="list">Sealed bags keep this candy fresh</li>
       <li class="list"><strong>Contains:</strong> sugar, peanuts, palm kernel, soybean oil, corn syrup, dextrose</li>
 	</ul>
 	<button class="button" onclick="orderProduct()">Buy now</button>
   </body>
 </html>
-
-<script>
-  function orderProduct(){
-	location.href="order-page.html";
-  }
-</script>

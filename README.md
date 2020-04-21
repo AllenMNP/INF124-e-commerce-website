@@ -12,6 +12,14 @@ Mailto after Form Validation - [sitepoint](https://www.sitepoint.com/community/t
 
 Mailto - [rapidtables](https://www.rapidtables.com/web/html/mailto.html)
 
+CSS Stylistic Properties - [w3schools](https://www.w3schools.com/cssref/)
+
+Web Safe Font Combinations - [w3schools](https://www.w3schools.com/cssref/css_websafe_fonts.asp)
+
+Image Mouse Hover Effect - [w3schools](https://www.w3schools.com/jsref/event_onmouseover.asp)
+
+Navigational Link - [w3schools](https://www.w3schools.com/css/css_inline-block.asp)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
