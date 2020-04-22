@@ -1,6 +1,6 @@
 # INF124-e-commerce-website
 
-##Website URL
+## Website URL
 
 http://circinus-34.ics.uci.edu:8080/project1/candyTable.html
 
