@@ -3,8 +3,11 @@
 ##Group Members
 
 Cass Tao 51347211
+
 Ryan Nguyen 92807810
+
 Bridgitte Ly 83171294
+
 Allen Pagsibigan 21923050
 
 ## Requirement Fulfillments
