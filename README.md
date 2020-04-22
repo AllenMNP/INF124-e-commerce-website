@@ -1,9 +1,16 @@
 # INF124-e-commerce-website
 
+##Group Members
+
+Cass Tao 51347211
+Ryan Nguyen 92807810
+Bridgitte Ly 83171294
+Allen Pagsibigan 21923050
+
 ## Requirement Fulfillments
-1.
-2.
-3.
+1. An overview of our business, the products we sell, the management team - basically the about page information is on the index.html page.  
+2. On candyTable.html, there are 10 candies displayed along with their name and the price of each item in a separate cell. 
+3. On candyTable.html, there is also an image placed for each item. 
 4. Prices are listed on the "Candy Shop" page (candyTable.html) for each product item as well as the amount of candy contained in one order.
 5. Users can click on a product on the "Candy Shop" page (candyTable.html) and it will link them to a new page for the product (i.e. Candy Canes -> candy-canes.html) that contain 3 pictures for each product as well as more detailed descriptions.
 6. Users can click on the "Buy Now" button located on a product page and this will link them to an order page (order-page.html) where they can fill out a form (with input verification) to order their desired candy.
