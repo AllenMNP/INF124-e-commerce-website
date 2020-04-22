@@ -1,5 +1,18 @@
 # INF124-e-commerce-website
 
+## Requirement Fulfillments
+1.
+2.
+3.
+4. Prices are listed on the "Candy Shop" page (candyTable.html) for each product item as well as the amount of candy contained in one order.
+5. Users can click on a product on the "Candy Shop" page (candyTable.html) and it will link them to a new page for the product (i.e. Candy Canes -> candy-canes.html) that contain 3 pictures for each product as well as more detailed descriptions.
+6. Users can click on the "Buy Now" button located on a product page and this will link them to an order page (order-page.html) where they can fill out a form (with input verification) to order their desired candy.
+7.
+8.
+9.
+10.
+11.
+
 ## Acknowledgements
 
 Text Entry Allignment on order forms - [stackoverflow post](https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html)
