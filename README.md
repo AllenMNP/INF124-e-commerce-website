@@ -10,7 +10,7 @@
 7.
 8.
 9.
-10. For our website, we added CSS stylistic properties to the homepage (main.css), each of the product's description pages (product.css), the index (index.css), and the order form (order-page.css). These properties include: background-color, color, font-family, font-size, text-align, margin-(left, right, top, bottom), list-style-type, padding, display, border, text-decoration, width, and height.
+10. For our website, we added CSS stylistic properties to the homepage (main.css), each of the product's description pages (product.css), the index (index.css), and the order form (order-page.css). These properties include: background-color, color, font-family, font-size, text-align, margin-(left, right, top, bottom), list-style-type, padding, display, border, text-decoration, width and height.
 11. On each product's description page, the user can hover over the three photos and the size of the images will increase. When the user moves their mouse off the photos, the images will return back to their normal size.
 
 ## Acknowledgements
