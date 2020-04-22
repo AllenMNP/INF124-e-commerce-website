@@ -2,7 +2,7 @@
 
 ##Website URL
 
-http://circinus-34.ics.uci.edu:8080/project1/index.html?fbclid=IwAR2RKWEQJVHyrVXEweE0Vesz1Gx7ngEYgupzHgTD2_xclOAdup1i6YNDJAA
+http://circinus-34.ics.uci.edu:8080/project1/candyTable.html
 
 ## Group Members
 
