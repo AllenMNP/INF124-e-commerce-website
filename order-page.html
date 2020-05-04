@@ -12,6 +12,7 @@
    	<meta charset="utf-8">
 	  <title> CandyRus Order Form</title>
 	  <link rel="stylesheet" href="order-page.css">
+	  <script src="order-page.js"> </script>
   </head>
 	<body>
 		<ul class="nav">
@@ -72,6 +73,12 @@
 		  	<!--address2 entry-->
 		  	<label for="address2">Address Line 2:</label>
 		  	<input type="text" id="street2" name="street" maxlength="30">
+		  </p>
+		  <p>
+			<!--zipcode entry-->
+			<label for="zipcode">Zip Code:</label>
+			<input type="text" id="zipcode" name="zipcode" 
+			placeholder="e.g. 12345" maxlength="5" >
 		  </p>
 		  <p>
 		  	<!--city entry-->
@@ -140,20 +147,23 @@
 		for(var i = 0; i < orderFormResponses.length - 1; i++){
 			if(orderFormResponses[i].value == "" && i != 6){
 				if(!requiredFieldMissing){
-					errorMessage += "A  required field has not been filled out.\n";
+					errorMessage += "A required field has not been filled out.\n";
 					requiredFieldMissing = true;
 				}
 			}
 			if(i == 4 && orderFormResponses[4].value.match("[0-9]{3}-[0-9]{3}-[0-9]{4}" )==null){
 				errorMessage += "Phone number must match the requested format. e.g. 123-456-7890\n";
 			}
-			if(i == 11 && orderFormResponses[11].value.match("[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}")==null){
+			if(i == 7 && orderFormResponses[7].value.match("[0-9]{5}" )==null){
+				errorMessage += "Zip code must match the requested format. e.g. 12345\n";
+			}
+			if(i == 12 && orderFormResponses[12].value.match("[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}")==null){
 				errorMessage += "Credit Card number must match the requested format. e.g. 1111-2222-3333-4444\n";
 			}
-			if(i == 12 && orderFormResponses[12].value.match("(0[1-9]|1[0-2])\/[12]\\d{3}")==null){
+			if(i == 13 && orderFormResponses[13].value.match("(0[1-9]|1[0-2])\/[12]\\d{3}")==null){
 				errorMessage += "Expiration date must match the requested format. e.g. 02/2020\n";
 			}
-			if(i == 13 && orderFormResponses[13].value.match("[0-9]{3}")==null){
+			if(i == 14 && orderFormResponses[14].value.match("[0-9]{3}")==null){
 				errorMessage += "CVV must match the requested format. e.g. 123";
 			}
 		}
