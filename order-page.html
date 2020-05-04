@@ -15,7 +15,7 @@
   </head>
 	<body>
 		<ul class="nav">
-			<li><a href="candyTable.html">< Back</a></li>
+			<li><a href="candyTable.php">< Back</a></li>
 		  </ul>
 	  	<h1>CandyRus Order Form <img src="companylogo.png"/></h1>
 		<form id="orderForm" action="mailto:?subject=Thank You" method="POST" enctype="text/plain" >
@@ -38,34 +38,34 @@
 		  <p>
 		  	<!--quantity entry-->
 			<label for="quantity">Quantity:</label>
-			<input type="number" id="quantity" min="1" max="100" 
+			<input type="number" id="quantity" min="1" max="100"
 			name="quantity" value=1><br>
 		  </p>
 		  <h3> Contact Information </h3>
 		  <p>
 		  	<!--firstname entry-->
 		 	<label for="firstname">First name:</label>
-			<input type="text" id="firstname" minlength="1" 
+			<input type="text" id="firstname" minlength="1"
 			name="firstname" >
 		  </p>
 		  <p>
 		  	<!--lastname entry-->
 			<label for="lastname">Last name:</label>
-			<input type="text" id="lastname" minlength="1" 
+			<input type="text" id="lastname" minlength="1"
 			name="lastname" >
 		  </p>
 		  <p>
 		  	<!--phonenumber entry-->
 			<label for="phonenumber">Phone number:</label>
-			<input type="tel" id="phonenumber" name="phonenumber" placeholder="e.g. 123-456-7890"  
+			<input type="tel" id="phonenumber" name="phonenumber" placeholder="e.g. 123-456-7890"
 			title="e.g. 123-456-7890">
 		  </p>
 		  <h3> Shipping Information </h3>
 		  <p>
 		  	<!--address1 entry-->
 		  	<label for="address1">Address Line 1:</label>
-		  	<input type="text" id="street1" name="street" 
-		  	placeholder="Street address, P.O.box, etc." 
+		  	<input type="text" id="street1" name="street"
+		  	placeholder="Street address, P.O.box, etc."
 		  	maxlength="30">
 		  </p>
 		  <p>
@@ -76,13 +76,13 @@
 		  <p>
 		  	<!--city entry-->
 		  	<label for="city">City:</label>
-		  	<input type="text" id="city" name="city" 
+		  	<input type="text" id="city" name="city"
 		  	placeholder="e.g. Irvine" maxlength="30" >
 		  </p>
 		  <p>
 		  	<!--state entry-->
 		  	<label for="state">State/Province/Region:</label>
-		  	<input type="text" id="state" name="state" 
+		  	<input type="text" id="state" name="state"
 		  	placeholder="e.g. CA" maxlength="30" >
 		  </p>
 		  <p>
@@ -102,7 +102,7 @@
 		  <p>
 		  	<!--cardnumber entry-->
 		  	<label for="cardnumber">Card Number:</label>
-		  	<input type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1111-2222-3333-4444" 
+		  	<input type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1111-2222-3333-4444"
 		  	title="e.g. 1111-2222-3333-4444" >
 		  </p>
 		  <p>
@@ -129,7 +129,7 @@
 		event.preventDefault()
 		if (formValidation()) {
 			document.getElementById("orderForm").submit()
-		} 
+		}
 	})
 
 	function  formValidation(){
@@ -165,5 +165,5 @@
 			return true;
 		}
 	}
-	
+
 </script>
