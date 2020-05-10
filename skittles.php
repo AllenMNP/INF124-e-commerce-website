@@ -21,7 +21,7 @@ require_once "db_connect.php";
 	</ul>
 	<h1> Skittles </h1>
 	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src=<?php echo "'".$row['Image1']."'" ?> alt="skittlespic1"/>
-	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src=<?php echo "'".$row['Image2']."'" ?>  alt="skittlespic2"/>
+	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src=<?php echo "'".$row['Image2']."'" ?> alt="skittlespic2"/>
 	<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src=<?php echo "'".$row['Image3']."'" ?> alt="skittlespic3"/>
   <h3><?php echo $row['Price'] ?></h3>
 	<h2>Product Details</h2>
