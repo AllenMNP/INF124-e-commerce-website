@@ -13,6 +13,8 @@
 	  <title> CandyRus Order Form</title>
 	  <link rel="stylesheet" href="order-page.css">
 	  <script src="order-page.js"> </script>
+	  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 	<body>
 		<ul class="nav">
@@ -131,6 +133,22 @@
 </html>
 
 <script>
+	/*$(document).ready(function(){
+		$("select.shipment").change(function(){
+			var selectedShipment = $(this).children("option:selected").val();
+			alert("You have selected the country - " + selectedShipment);
+			if (document.getElementById("shipping").value == "")
+        		document.getElementById("shipping").value = selectedShipment;
+		});
+	});
+	$('#shipment').change(function(){
+		$('#shipping').val($(this).find('option:selected').val());
+	});*/
+	$('#shipment').change(function(){
+		var selectedShipment = $(this).children("option:selected").val();
+		document.getElementById("shipping").value = selectedShipment;
+		document.getElementById("total").value = parseFloat(selectedShipment) + parseFloat(document.getElementById("tax").value);
+	});
 
 	document.getElementById("orderForm").addEventListener('submit', function (event) {
 		event.preventDefault()
