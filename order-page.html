@@ -101,8 +101,8 @@
 		  	<!--shipment (duration) entry-->
 		  	<label for="shipment">Shipping method:</label>
 		  	<select name = "shipment" id="shipment">
-		  	  <option value="standardship">$3.00 - Standard Shipping (5-7 business days)</option>
-		  	  <option value="expressship">$8.00 - Express Shipping (2-5 business days)</option>
+		  	  <option value="Standard">$3.00 - Standard Shipping (5-7 business days)</option>
+		  	  <option value="Express">$8.00 - Express Shipping (2-5 business days)</option>
 		  	</select>
 		  </p>
 		  <h3> Payment Information </h3>
@@ -136,7 +136,7 @@
 		event.preventDefault()
 		if (formValidation()) {
 			document.getElementById("orderForm").submit()
-		} 
+		}
 	})
 
 	function  formValidation(){
@@ -154,7 +154,7 @@
 			if(i == 4 && orderFormResponses[4].value.match("[0-9]{3}-[0-9]{3}-[0-9]{4}" )==null){
 				errorMessage += "Phone number must match the requested format. e.g. 123-456-7890\n";
 			}
-			if(i == 7 && orderFormResponses[7].value.match("[0-9]{4,5}" )==null){
+			if(i == 7 && orderFormResponses[7].value.match("[0-9]{5}" )==null){
 				errorMessage += "Zip code must match the requested format. e.g. 12345\n";
 			}
 			if(i == 12 && orderFormResponses[12].value.match("[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}")==null){
@@ -175,5 +175,5 @@
 			return true;
 		}
 	}
-	
+
 </script>
