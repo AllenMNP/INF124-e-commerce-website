@@ -19,7 +19,7 @@
 			<li><a href="candyTable.php">< Back</a></li>
 		  </ul>
 	  	<h1>CandyRus Order Form <img src="companylogo.png"/></h1>
-		<form id="orderForm" action="mailto:?subject=Thank You" method="POST" enctype="text/plain" >
+		<form id="orderForm" action="order-page.php" method="post">
 		  <p>
 		  	<!--product entry-->
 		  	<label for="product">Product:</label>
@@ -64,15 +64,15 @@
 		  <h3> Shipping Information </h3>
 		  <p>
 		  	<!--address1 entry-->
-		  	<label for="address1">Address Line 1:</label>
-		  	<input type="text" id="street1" name="street"
+		  	<label for="street1">Address Line 1:</label>
+		  	<input type="text" id="street1" name="street1"
 		  	placeholder="Street address, P.O.box, etc."
 		  	maxlength="30">
 		  </p>
 		  <p>
 		  	<!--address2 entry-->
-		  	<label for="address2">Address Line 2:</label>
-		  	<input type="text" id="street2" name="street" maxlength="30">
+		  	<label for="street2">Address Line 2:</label>
+		  	<input type="text" id="street2" name="street2" maxlength="30">
 		  </p>
 		  <p>
 			<!--zipcode entry-->
@@ -100,7 +100,7 @@
 		  <p>
 		  	<!--shipment (duration) entry-->
 		  	<label for="shipment">Shipping method:</label>
-		  	<select id="shipment">
+		  	<select name = "shipment" id="shipment">
 		  	  <option value="standardship">$3.00 - Standard Shipping (5-7 business days)</option>
 		  	  <option value="expressship">$8.00 - Express Shipping (2-5 business days)</option>
 		  	</select>
