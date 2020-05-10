@@ -13,6 +13,8 @@
 	  <title> CandyRus Order Form</title>
 	  <link rel="stylesheet" href="order-page.css">
 	  <script src="order-page.js"> </script>
+	  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 	<body>
 	<div class="row">
@@ -103,9 +105,10 @@
 			<p>
 				<!--shipment (duration) entry-->
 				<label for="shipment">Shipping method:</label>
-				<select id="shipment" name="shipment" onchange="run()">
-				<option value="standardship">$3.00 - Standard Shipping (5-7 business days)</option>
-				<option value="expressship">$8.00 - Express Shipping (2-5 business days)</option>
+				<select id="shipment" name="shipment">
+				<option style="display: none"></option>
+				<option value="3.00">$3.00 - Standard Shipping (5-7 business days)</option>
+				<option value="8.00">$8.00 - Express Shipping (2-5 business days)</option>
 				</select>
 			</p>
 			<h3> Payment Information </h3>
@@ -146,13 +149,13 @@
 			<p>
 				<!--shipping entry-->
 				<label for="shipping">Shipping: $</label>
-				<input type="text" id="shipping" name="shipping" maxlength="30" >
+				<input type="number" id="shipping" name="shipping" readonly>
 			</p>
 			<br/>
 			<p>
 				<!--total entry-->
 				<label for="total">Total: $</label>
-				<input type="text" id="total" name="total" placeholder="e.g. USA" maxlength="30" >
+				<input type="text" id="total" name="total" readonly>
 			</p>
 			</form>
 		</div>
@@ -161,6 +164,22 @@
 </html>
 
 <script>
+	/*$(document).ready(function(){
+		$("select.shipment").change(function(){
+			var selectedShipment = $(this).children("option:selected").val();
+			alert("You have selected the country - " + selectedShipment);
+			if (document.getElementById("shipping").value == "")
+        		document.getElementById("shipping").value = selectedShipment;
+		});
+	});
+	$('#shipment').change(function(){
+		$('#shipping').val($(this).find('option:selected').val());
+	});*/
+	$('#shipment').change(function(){
+		var selectedShipment = $(this).children("option:selected").val();
+		document.getElementById("shipping").value = selectedShipment;
+		document.getElementById("total").value = parseFloat(selectedShipment) + parseFloat(document.getElementById("tax").value);
+	});
 
 	document.getElementById("orderForm").addEventListener('submit', function (event) {
 		event.preventDefault()
