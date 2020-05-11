@@ -34,7 +34,7 @@ Assignment two
 
 2.
 
-3. After the information is stored in the database, the users are redirected to confirmation-page.php. On the confirmation page, it shows various details about the order like the name, address, product, phone, last 4 of the credit card, quantity, subtotal, and total. 
+3.
 
 4. To make our website dynamic, we used ajax on the order form page. When a user types in their zip code, the city, state, and country will automatically fill-in. Additionally, the corresponding tax rate will show up. As another feature, when the user updates the quantity of the product they want, the price on the subtotal will increase accordingly. Once they choose their shipping method, the total price will add up the subtotal, tax, and shipping together. 
 ## Acknowledgements
@@ -58,6 +58,12 @@ Image Mouse Hover Effect - [w3schools](https://www.w3schools.com/jsref/event_onm
 Navigational Link - [w3schools](https://www.w3schools.com/css/css_inline-block.asp)
 
 SQL Prepared Statements - [w3schools](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
+
+PHP - AJAX and MYSQL - [w3schools](https://www.w3schools.com/pHP/php_ajax_database.asp)
+
+PHP - Parsing csv files - [php manual](https://www.php.net/manual/en/function.fgetcsv.php)
+
+AJAX Select - [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-option-in-a-select-box-using-jquery.php)
 
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
