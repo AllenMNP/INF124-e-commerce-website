@@ -59,6 +59,8 @@ Navigational Link - [w3schools](https://www.w3schools.com/css/css_inline-block.a
 
 SQL Prepared Statements - [w3schools](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
 
+PHP - AJAX and MYSQL - [w3schools](https://www.w3schools.com/pHP/php_ajax_database.asp)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
