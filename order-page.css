@@ -23,7 +23,7 @@
     clear: both;
 }
 
-#tax, #shipping, #total{
+#tax, #shipping, #total, #subtotal{
     border: none;
     background-color: #E9F3F3; 
     color: black;

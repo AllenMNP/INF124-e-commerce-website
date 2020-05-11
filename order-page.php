@@ -1,3 +1,8 @@
+<?php
+    require_once "db_connect.php";
+    $result = $conn->query("SELECT * FROM Candies"); 
+?>
+
 <!DOCTYPE html>
 <!-- CSS for text entry styling -->
 <style type="text/css">
@@ -13,7 +18,6 @@
 	  <title> CandyRus Order Form</title>
 	  <link rel="stylesheet" href="order-page.css">
 	  <script src="order-page.js"> </script>
-	  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 	<body>
@@ -27,17 +31,14 @@
 			<p>
 				<!--product entry-->
 				<label for="product">Product:</label>
-				<select id="product" name="product">
-				<option value="Peanut Butter Cups">Peanut Butter Cups</option>
-				<option value="Candy Canes">Candy Canes</option>
-				<option value="Almond Joy">Almond Joy</option>
-				<option value="Candy Corn Oreos">Candy Corn Oreos</option>
-				<option value="Fruit Rollup">Fruit Roll-Ups</option>
-				<option value="Nerds">Nerds</option>
-				<option value="Swedish Fish">Swedish Fish</option>
-				<option value="Reese's Pieces">Reese's Pieces</option>
-				<option value="Skittles">Skittles</option>
-				<option value="Rice Krispies">Rice Krispies</option>
+				<select id="product" name="product" onchange="getPrice(this.value)">
+                <option style="display: none"></option>
+                <?php
+                    while ($rows = $result->fetch_assoc()){
+                        $product_name = $rows['Name'];
+                        echo "<option value='$product_name'>$product_name</option>";
+                    }
+                ?>
 				</select>
 			</p>
 			<p>
@@ -139,23 +140,23 @@
 			<p>
 				<!--subtotal entry-->
 				<label for="subtotal">Subtotal: $</label>
-				<input type="text" id="subtotal" name="subtotal" placeholder="e.g. USA" maxlength="30" >
+				<input type="text" id="subtotal" name="subtotal" style="font-size: 14px;" readonly>
 			</p>
 			<p>
 				<!--tax entry-->
 				<label for="tax">Tax: $</label>
-				<input type="number" id="tax" name="tax" readonly>
+				<input type="number" id="tax" name="tax" style="font-size: 14px;" readonly>
 			</p>
 			<p>
 				<!--shipping entry-->
 				<label for="shipping">Shipping: $</label>
-				<input type="number" id="shipping" name="shipping" readonly>
+				<input type="number" id="shipping" name="shipping" style="font-size: 14px;" readonly>
 			</p>
 			<br/>
 			<p>
 				<!--total entry-->
-				<label for="total">Total: $</label>
-				<input type="text" id="total" name="total" readonly>
+				<label for="total"><b>Total: $</b></label>
+				<input type="text" id="total" name="total" style="font-weight: bold; font-size: 16px;" readonly>
 			</p>
 			</form>
 		</div>
@@ -164,22 +165,24 @@
 </html>
 
 <script>
-	/*$(document).ready(function(){
-		$("select.shipment").change(function(){
-			var selectedShipment = $(this).children("option:selected").val();
-			alert("You have selected the country - " + selectedShipment);
-			if (document.getElementById("shipping").value == "")
-        		document.getElementById("shipping").value = selectedShipment;
-		});
-	});
-	$('#shipment').change(function(){
-		$('#shipping').val($(this).find('option:selected').val());
-	});*/
-	$('#shipment').change(function(){
-		var selectedShipment = $(this).children("option:selected").val();
-		document.getElementById("shipping").value = selectedShipment;
-		document.getElementById("total").value = parseFloat(selectedShipment) + parseFloat(document.getElementById("tax").value);
-	});
+	$('#product').change(function(){
+        document.getElementById("quantity").value = 1;
+        document.getElementById("tax").value = '';
+        document.getElementById("shipping").value = '';
+    });
+
+    $('#quantity').blur(function(){
+        var selectedQuantity = $('#quantity').val();
+        document.getElementById("total").value = Number(parseFloat(document.getElementById("subtotal").value)*selectedQuantity).toFixed(2);
+        document.getElementById("subtotal").value = Number(parseFloat(document.getElementById("subtotal").value)*selectedQuantity).toFixed(2);
+    });
+
+    $('#shipment').change(function(){
+        var selectedShipment = $(this).children("option:selected").val();
+        document.getElementById("shipping").value = selectedShipment;
+        document.getElementById("total").value = Number(parseFloat(selectedShipment) + parseFloat(document.getElementById("total").value)).toFixed(2);
+    });
+	
 
 	document.getElementById("orderForm").addEventListener('submit', function (event) {
 		event.preventDefault()
@@ -226,3 +229,6 @@
 	}
 	
 </script>
+<?php
+    $conn = null;
+?>

@@ -9,5 +9,5 @@ function normalImg(x){
 }
 
 function orderProduct(){
-    location.href="order-page.html";
+    location.href="order-page.php";
 }
