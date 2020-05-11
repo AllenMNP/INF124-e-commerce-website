@@ -63,6 +63,8 @@ PHP - AJAX and MYSQL - [w3schools](https://www.w3schools.com/pHP/php_ajax_databa
 
 PHP - Parsing csv file - [php manual](https://www.php.net/manual/en/function.fgetcsv.php)
 
+AJAX select - [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-option-in-a-select-box-using-jquery.php)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
