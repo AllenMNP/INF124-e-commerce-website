@@ -27,7 +27,7 @@
 				<li><a href="candyTable.php">< Back</a></li>
 			</ul>
 			<h1>CandyRus Order Form <img src="companylogo.png"/></h1>
-			<form id="orderForm" action="mailto:?subject=Thank You" method="POST" enctype="text/plain" >
+			<form id="orderForm" action="order-database.php" method="post">
 			<p>
 				<!--product entry-->
 				<label for="product">Product:</label>
@@ -69,15 +69,15 @@
 			<h3> Shipping Information </h3>
 			<p>
 				<!--address1 entry-->
-				<label for="address1">Address Line 1:</label>
-				<input type="text" id="street1" name="street" 
+				<label for="street1">Address Line 1:</label>
+				<input type="text" id="street1" name="street1" 
 				placeholder="Street address, P.O.box, etc." 
 				maxlength="30">
 			</p>
 			<p>
 				<!--address2 entry-->
-				<label for="address2">Address Line 2:</label>
-				<input type="text" id="street2" name="street" maxlength="30">
+				<label for="street2">Address Line 2:</label>
+				<input type="text" id="street2" name="street2" maxlength="30">
 			</p>
 			<p>
 				<!--zipcode entry-->
@@ -134,7 +134,7 @@
 			</p>
 			<br/>
 			<input type="submit">
-			<input type="reset" value="Clear Order Form"/>
+			</form>
 		</div>
 		<div class="column right">
 			<p>
@@ -158,7 +158,6 @@
 				<label for="total"><b>Total: $</b></label>
 				<input type="text" id="total" name="total" style="font-weight: bold; font-size: 16px;" readonly>
 			</p>
-			</form>
 		</div>
 	</div>
 	</body>
