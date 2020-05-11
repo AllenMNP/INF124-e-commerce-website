@@ -15,7 +15,7 @@ Bridgitte Ly 83171294
 Allen Pagsibigan 21923050
 
 ## Requirement Fulfillments
-Assignment one
+Assignment 1
 1. An overview of our business, the products we sell, the management team - basically the about page information is on the index.html page.  
 2. On candyTable.html, there are 10 candies displayed along with their name and the price of each item in a separate cell. 
 3. On candyTable.html, there is also an image placed for each item. 
@@ -28,11 +28,11 @@ Assignment one
 10. On each product's description page, the user can hover over the three photos and the size of the images will increase. When the user moves their mouse off the photos, the images will return back to their normal size (product.js).
 11. Our names and student IDs can be found on the "About Us" page (index.html) that is linked on the homepage to the right of the Candy Shop title.
 
-Assignment two
+Assignment 2
 
 1. The information of the products are all stored inside mariaDB and data is received using PHP. Static HTML pages are renamed to be PHP and the SQL database is populated on the homepage of it has not been populated before. 
 
-2.
+2. Once the user has filled out all the required form fields in order-page.php, the user's inputs are verified before submission and sent through POST to order-database.php where they are inserted into the Orders table in the database.
 
 3. After the information is stored in the database, the users are redirected to confirmation-page.php. On the confirmation page, it shows various details about the order like the name, address, product, phone, last 4 of the credit card, quantity, subtotal, and total. 
 
