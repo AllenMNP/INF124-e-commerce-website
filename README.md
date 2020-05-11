@@ -15,6 +15,7 @@ Bridgitte Ly 83171294
 Allen Pagsibigan 21923050
 
 ## Requirement Fulfillments
+Assignment one
 1. An overview of our business, the products we sell, the management team - basically the about page information is on the index.html page.  
 2. On candyTable.html, there are 10 candies displayed along with their name and the price of each item in a separate cell. 
 3. On candyTable.html, there is also an image placed for each item. 
