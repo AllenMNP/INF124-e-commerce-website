@@ -22,6 +22,7 @@ try{
 catch(PDOException $e){
     echo $sql . "<br>" . $e->getMessage();
 }
+$conn->close();
 ?>
 
 <!DOCTYPE html>
