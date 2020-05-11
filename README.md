@@ -47,6 +47,8 @@ Image Mouse Hover Effect - [w3schools](https://www.w3schools.com/jsref/event_onm
 
 Navigational Link - [w3schools](https://www.w3schools.com/css/css_inline-block.asp)
 
+SQL Prepared Statements - [w3schools](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
