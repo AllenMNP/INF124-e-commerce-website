@@ -180,7 +180,7 @@
     $('#shipment').change(function(){
         var selectedShipment = $(this).children("option:selected").val();
         document.getElementById("shipping").value = selectedShipment;
-        document.getElementById("total").value = Number(parseFloat(selectedShipment) + parseFloat(document.getElementById("total").value)).toFixed(2);
+        document.getElementById("total").value = Number(parseFloat(selectedShipment) + parseFloat(document.getElementById("subtotal").value) + parseFloat(document.getElementById("tax").value)).toFixed(2);
     });
 	
 

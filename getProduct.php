@@ -3,9 +3,9 @@
 
     $val = $_GET["value"];
 
-    $val_M = mysqli_real_escape_string($conn, $val);
+    $match = mysqli_real_escape_string($conn, $val);
 
-    $sql = "SELECT Name, Price FROM Candies WHERE Name='$val_M'";
+    $sql = "SELECT Name, Price FROM Candies WHERE Name='$match'";
     $result = mysqli_query($conn, $sql);
 
     if(mysqli_num_rows($result)>0)
@@ -15,4 +15,5 @@
             echo $product_price;
         }
     }
+    $conn->close();
 ?>
