@@ -24,7 +24,7 @@
 	<div class="row">
 		<div class="column left">
 			<ul class="nav">
-				<li><a href="candyTable.html">< Back</a></li>
+				<li><a href="candyTable.php">< Back</a></li>
 			</ul>
 			<h1>CandyRus Order Form <img src="companylogo.png"/></h1>
 			<form id="orderForm" action="mailto:?subject=Thank You" method="POST" enctype="text/plain" >
