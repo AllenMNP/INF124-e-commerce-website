@@ -29,9 +29,13 @@ Assignment one
 11. Our names and student IDs can be found on the "About Us" page (index.html) that is linked on the homepage to the right of the Candy Shop title.
 
 Assignment two
+
 1.
+
 2.
+
 3.
+
 4. To make our website dynamic, we used ajax on the order form page. When a user types in their zip code, the city, state, and country will automatically fill-in. Additionally, the corresponding tax rate will show up. As another feature, when the user updates the quantity of the product they want, the price on the subtotal will increase accordingly. Once they choose their shipping method, the total price will add up the subtotal, tax, and shipping together. 
 ## Acknowledgements
 
