@@ -27,11 +27,12 @@ Assignment one
 9. For our website, we added CSS stylistic properties to the homepage (main.css), each of the product's description pages (product.css), the index (index.css), and the order form (order-page.css). These properties include: background-color, color, font-family, font-size, text-align, margin-(left, right, top, bottom), list-style-type, padding, display, border, text-decoration, width and height. On our homepage, the font color and size of the title is customized, as well as the background color for the header/navigation bar. The title and prices of each product is aligned to be centered, and the color of the names are also customized. When a user hovers over each product, the background color changes to show which item they are currently looking at. Similarly on each product page, we chose specific font families, sizes and colors, and adjusted the width and height of the images. The "buy now" button color was made to match the rest of the page. Our index and order form page have the text aligned to the left, customized fonts and colors as well. We added a back button to each page to make navigation on the website smoother. 
 10. On each product's description page, the user can hover over the three photos and the size of the images will increase. When the user moves their mouse off the photos, the images will return back to their normal size (product.js).
 11. Our names and student IDs can be found on the "About Us" page (index.html) that is linked on the homepage to the right of the Candy Shop title.
+
 Assignment two
 1.
 2.
 3.
-4.
+4. To make our website dynamic, we used ajax on the order form page. When a user types in their zip code, the city, state, and country will automatically fill-in. Additionally, the corresponding tax rate will show up. As another feature, when the user updates the quantity of the product they want, the price on the subtotal will increase accordingly. Once they choose their shipping method, the total price will add up the subtotal, tax, and shipping together. 
 ## Acknowledgements
 
 Text Entry Allignment on order forms - [stackoverflow post](https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html)
