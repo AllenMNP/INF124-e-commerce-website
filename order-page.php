@@ -124,7 +124,7 @@ if (isset( $_POST)){
 
 
 		$stmt->execute();
-		header('Location: http://localhost/inf124-e-commerce-website/confirmation_page.php');
+		header('Location: confirmation_page.php');
 		
 	}
 
