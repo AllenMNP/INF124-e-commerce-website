@@ -30,7 +30,7 @@ Assignment one
 
 Assignment two
 
-1.
+1. The information of the products are all stored inside mariaDB and data is received using PHP. Static HTML pages are renamed to be PHP and the SQL database is populated on the homepage of it has not been populated before. 
 
 2.
 
@@ -58,12 +58,6 @@ Image Mouse Hover Effect - [w3schools](https://www.w3schools.com/jsref/event_onm
 Navigational Link - [w3schools](https://www.w3schools.com/css/css_inline-block.asp)
 
 SQL Prepared Statements - [w3schools](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
-
-PHP - AJAX and MYSQL - [w3schools](https://www.w3schools.com/pHP/php_ajax_database.asp)
-
-PHP - Parsing csv files - [php manual](https://www.php.net/manual/en/function.fgetcsv.php)
-
-AJAX Select - [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-option-in-a-select-box-using-jquery.php)
 
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
