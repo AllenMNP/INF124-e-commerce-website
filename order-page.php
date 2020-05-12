@@ -107,7 +107,7 @@
 				<!--shipment (duration) entry-->
 				<label for="shipment">Shipping method:</label>
 				<select id="shipment" name="shipment">
-				<option style="display: none"></option>
+				<option selected="3.00"></option>
 				<option value="3.00">$3.00 - Standard Shipping (5-7 business days)</option>
 				<option value="8.00">$8.00 - Express Shipping (2-5 business days)</option>
 				</select>
@@ -134,31 +134,32 @@
 			</p>
 			<br/>
 			<input type="submit">
-			</form>
+			
 		</div>
-		<div class="column right">
-			<p>
-				<!--subtotal entry-->
-				<label for="subtotal">Subtotal: $</label>
-				<input type="text" id="subtotal" name="subtotal" style="font-size: 14px;" readonly>
-			</p>
-			<p>
-				<!--tax entry-->
-				<label for="tax">Tax: $</label>
-				<input type="number" id="tax" name="tax" style="font-size: 14px;" readonly>
-			</p>
-			<p>
-				<!--shipping entry-->
-				<label for="shipping">Shipping: $</label>
-				<input type="number" id="shipping" name="shipping" style="font-size: 14px;" readonly>
-			</p>
-			<br/>
-			<p>
-				<!--total entry-->
-				<label for="total"><b>Total: $</b></label>
-				<input type="text" id="total" name="total" style="font-weight: bold; font-size: 16px;" readonly>
-			</p>
-		</div>
+			<div class="column right">
+				<p>
+					<!--subtotal entry-->
+					<label for="subtotal">Subtotal: $</label>
+					<input type="text" id="subtotal" name="subtotal" style="font-size: 14px;" readonly>
+				</p>
+				<p>
+					<!--tax entry-->
+					<label for="tax">Tax: $</label>
+					<input type="number" id="tax" name="tax" style="font-size: 14px;" readonly>
+				</p>
+				<p>
+					<!--shipping entry-->
+					<label for="shipping">Shipping: $</label>
+					<input type="number" id="shipping" name="shipping" style="font-size: 14px;" readonly>
+				</p>
+				<br/>
+				<p>
+					<!--total entry-->
+					<label for="total"><b>Total: $</b></label>
+					<input type="text" id="total" name="total" style="font-weight: bold; font-size: 16px;" readonly>
+				</p>
+			</div>
+		</form>
 	</div>
 	</body>
 </html>
@@ -196,7 +197,7 @@
 		var errorMessage = "";
 		var requiredFieldMissing = false
 		for(var i = 0; i < orderFormResponses.length - 1; i++){
-			if(orderFormResponses[i].value == "" && i != 6){
+			if(orderFormResponses[i].value == "" && i != 6 && i != 16 && i != 17 && i != 18 && i != 19 && i != 15){
 				if(!requiredFieldMissing){
 					errorMessage += "A required field has not been filled out.\n";
 					requiredFieldMissing = true;

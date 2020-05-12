@@ -23,6 +23,7 @@ if (isset( $_POST)){
 	  	ExpDate VARCHAR(10) NOT NULL,
 		CVV INT(3) NOT NULL,
 		Subtotal DECIMAL(10,2) NOT NULL,
+		Tax DECIMAL(10,2) NOT NULL,
 		Total DECIMAL(10,2) NOT NULL
 	  	)";
 	  	if ($conn->query($mysql) === TRUE) {
@@ -32,10 +33,10 @@ if (isset( $_POST)){
 	    	echo 'Error creating table' . $conn->error;
 	    }
 		
-	  	$stmt = $conn->prepare("INSERT IGNORE INTO Orders (OrderID, FirstName, LastName, PhoneNumber, Product, Quantity, Address1, Address2, Zipcode, City, State, Country, ShipMethod, CCNumber, ExpDate, CVV, Subtotal, Total)
-	  		VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+	  	$stmt = $conn->prepare("INSERT IGNORE INTO Orders (OrderID, FirstName, LastName, PhoneNumber, Product, Quantity, Address1, Address2, Zipcode, City, State, Country, ShipMethod, CCNumber, ExpDate, CVV, Subtotal, Tax, Total)
+	  		VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
-	  	$stmt->bind_param("issssissssssssssdd", $autoincrement, $firstname, $lastname, $phonenumber, $product, $quantity, $address1, $address2, $zipcode, $city, $state, $country, $shipment, $cardnumber, $expiration, $cvv, $subtotal, $total);
+	  	$stmt->bind_param("issssissssssssssddd", $autoincrement, $firstname, $lastname, $phonenumber, $product, $quantity, $address1, $address2, $zipcode, $city, $state, $country, $shipment, $cardnumber, $expiration, $cvv, $subtotal, $tax, $total);
 
 		$firstname = $_POST["firstname"];
 		$_SESSION['firstname'] = $_POST["firstname"];
@@ -102,15 +103,9 @@ if (isset( $_POST)){
 		$_SESSION['country'] = $_POST["country"];
 		$shipment = $_POST["shipment"];
 		$_SESSION['shipment'] = $_POST["shipment"];
-		$total = 0;
-		switch($shipment){
-			case "3.00":
-				$total = $subtotal + 3;
-				break;
-			case "8.00":
-				$total = $subtotal + 8;
-				break;
-		}
+		$_SESSION['tax'] = $_POST["tax"];
+
+		
 
 		$cardnumber = $_POST["cardnumber"];
 		$_SESSION['cardnumber'] = $_POST["cardnumber"];
@@ -118,8 +113,12 @@ if (isset( $_POST)){
 		$_SESSION['expiration'] = $_POST["expiration"];
 		$cvv = $_POST["cvv"];
 		$_SESSION['cvv'] = $_POST["cvv"];
-		$_SESSION['subtotal'] = $subtotal;
-		$_SESSION['total'] = $total;
+		$total = $_POST['total'];
+		$_SESSION['subtotal'] = $_POST['subtotal'];
+		$subtotal = $_POST['subtotal'];
+		$_SESSION['total'] = $_POST['total'];
+
+
 		$autoincrement = 0;
 
 
@@ -134,5 +133,4 @@ if (isset( $_POST)){
 }
 $stmt->close();
 $conn->close();
-//('Ryan','Nguyen','7146160227','Peanut Butter','3','1234 fake street','1234','92648','HB','CA','USA','3 day','14901384091','04/28','101')
 ?>

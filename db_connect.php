@@ -11,7 +11,7 @@ try {
 
   $sql= "CREATE DATABASE candyrusDB"; 
   // use exec() because no results are returned 
-  $conn->exec($sql); echo "Database created successfully<br>"; 
+  $conn->exec($sql);
   } 
 catch(PDOException$e) 
   { 

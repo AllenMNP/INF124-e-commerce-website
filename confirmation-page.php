@@ -34,6 +34,9 @@ $conn->close();
     </head>
     <body style="background-color: #E9F3F3;">
         <h1 class="confirm">Confirmation Page</h1>
+        <ul class="nav">
+		    <li><a href="candyTable.php">< Back</a></li>
+	    </ul>
         <div class="content">
             <div class="content-head">
                 <h2 class="thanks">Thanks for your order!</h2>
@@ -79,6 +82,10 @@ $conn->close();
                         <tr>
                             <td class="left">Shipping: </td>
                             <td class="right"><?php echo '$'.$shipping; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="left">Tax: </td>
+                            <td class="right"><?php echo '$'.$tax; ?></td>
                         </tr>
                         <tr>
                             <td class="left">Total: </td>
