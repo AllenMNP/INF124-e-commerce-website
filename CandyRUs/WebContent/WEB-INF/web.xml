@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>CandyRUs</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -11,13 +11,28 @@
   </welcome-file-list>
   
   <servlet>
-  	<servlet-name>cacheHistory</servlet-name>
-  	<servlet-class>HistoryServlet</servlet-class>
+    <servlet-name>cacheHistory</servlet-name>
+    <servlet-class>HistoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductDetails</servlet-name>
+    <servlet-class>ProductDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddToCart</servlet-name>
+    <servlet-class>AddToCart</servlet-class>
   </servlet>
   
   <servlet-mapping>
     <servlet-name>cacheHistory</servlet-name>
     <url-pattern>/INF124-e-commerce-website/showHistory</url-pattern>
   </servlet-mapping>
-  
+  <servlet-mapping>
+    <servlet-name>ProductDetails</servlet-name>
+    <url-pattern>/ProductDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddToCart</servlet-name>
+    <url-pattern>/AddToCart</url-pattern>
+  </servlet-mapping>
 </web-app>
