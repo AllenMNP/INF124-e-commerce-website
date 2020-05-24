@@ -37,6 +37,14 @@ Assignment 2
 3. After the information is stored in the database, the users are redirected to confirmation-page.php. On the confirmation page, it shows various details about the order like the name, address, product, phone, last 4 of the credit card, quantity, subtotal, and total. 
 
 4. To make our website dynamic, we used ajax on the order form page (order-page.php, order-page.js). When a user types in their zip code, the city, state, and country will automatically fill-in (getCityState.php). Additionally, the corresponding tax rate will show up (getTax.php). As another feature, when the user updates the quantity of the product they want, the price on the subtotal will increase accordingly (getProduct.php). Once they choose their shipping method, the total price will add up the subtotal, tax, and shipping together. 
+
+Assignment 3
+1.
+
+2.
+
+3.
+
 ## Acknowledgements
 
 Text Entry Allignment on order forms - [stackoverflow post](https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html)
@@ -64,6 +72,8 @@ PHP - AJAX and MYSQL - [w3schools](https://www.w3schools.com/pHP/php_ajax_databa
 PHP - Parsing csv file - [php manual](https://www.php.net/manual/en/function.fgetcsv.php)
 
 AJAX select - [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-option-in-a-select-box-using-jquery.php)
+
+Servlet Sessions - [ntu.edu.sg](https://www.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html)
 
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
