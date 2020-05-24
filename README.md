@@ -42,9 +42,9 @@ Assignment 3
 
 1. HistoryServlet.java is the servlet that works with session data and adds Product names to a list saved in the session to keep track of the 5 (or less) most recent products viewed. The user can view what products have recently been viewed by clicking on a "Show Recently Viewed" button on the main Candy Table page. 
 
-2.
+2. In ProductDetails.java, the page takes the product name as the identifer to gather information such as the descriptions, prices, and images from the database and prints out the html page for each product. When a user presses on the Add To Cart button, the item name will be added and stored in their cart (AddToCart.java).
 
-3.
+3. 
 
 ## Acknowledgements
 
@@ -75,6 +75,14 @@ PHP - Parsing csv file - [php manual](https://www.php.net/manual/en/function.fge
 AJAX select - [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-get-the-value-of-selected-option-in-a-select-box-using-jquery.php)
 
 Servlet Sessions - [ntu.edu.sg](https://www.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html)
+
+HttpSession - [beginners book](https://beginnersbook.com/2013/05/http-session/)
+
+Request Dispatcher - [javatpoint](https://www.javatpoint.com/requestdispatcher-in-servlet)
+
+ResultSet - [oracle](https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html)
+
+Java Servlets, JDBC, MySql - [geeksforgeeks](https://www.geeksforgeeks.org/java-servlet-and-jdbc-example-insert-data-in-mysql/)
 
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
