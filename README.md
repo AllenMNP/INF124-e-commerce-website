@@ -40,7 +40,7 @@ Assignment 2
 
 Assignment 3
 
-1. HistoryServlet.java is the servlet that works with session data and adds Product names to a list saved in the session to keep track of the 5 (or less) most recent products viewed. The user can view what products have recently been viewed by clicking on a "Show Recently Viewed" button on the main Candy Table page. HistoryServlet is then sent to the ProductDetails.java servlet using "include" to transfer the request/response information from HistoryServlet.
+1. MyServlet.java is is the servlet that returns the HTML for the homepage, which was previously known as candyTable.html. When that servlet is called, it reads the database to get the data to put it in the appropriate places within the html response. HistoryServlet.java is the servlet that works with session data and adds Product names to a list saved in the session to keep track of the 5 (or less) most recent products viewed. The user can view what products have recently been viewed by clicking on a "Show Recently Viewed" button on the main Candy Table page. HistoryServlet is then sent to the ProductDetails.java servlet using "include" to transfer the request/response information from HistoryServlet.
 
 2. In ProductDetails.java, the page takes the product name as the identifer to gather information such as the descriptions, prices, and images from the database and prints out the html page for each product. When a user presses on the Add To Cart button, the item name will be added and stored in their cart (AddToCart.java).
 
