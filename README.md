@@ -44,7 +44,7 @@ Assignment 3
 
 2. In ProductDetails.java, the page takes the product name as the identifer to gather information such as the descriptions, prices, and images from the database and prints out the html page for each product. When a user presses on the Add To Cart button, the item name will be added and stored in their cart (AddToCart.java).
 
-3. 
+3. After the user adds items to the cart, then clicking on the cart button will tkae users to the CartServlet.java. CartServlet.java will display the items in the cart while also showing the total price of all the items. Users can then fill out all the fields in the page. Once the user fills out the fields in the page, the form calls Checkout.java. In Checkout.java, the data is inserted into the database and the response is forwarded to ConfirmationServlet.java. In ConfirmationServlet.java, the fields that were inserted into the database are displayed. These fields include the items bought, the total price, and some contact information previously provided by the user. 
 
 ## Acknowledgements
 
