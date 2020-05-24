@@ -84,6 +84,10 @@ ResultSet - [oracle](https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSe
 
 Java Servlets, JDBC, MySql - [geeksforgeeks](https://www.geeksforgeeks.org/java-servlet-and-jdbc-example-insert-data-in-mysql/)
 
+HTML to Servlet - [coderjava](https://www.codejava.net/java-ee/servlet/handling-html-form-data-with-java-servlet)
+
+Submit form programatically - [stackoverflow](https://stackoverflow.com/questions/1691296/how-to-submit-a-form-programmatically-in-java-servlet)
+
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
 - [Ralphs](https://www.ralphs.com/p/rice-krispies-treats-original-crispy-marshmallow-squares/0003800007781)
