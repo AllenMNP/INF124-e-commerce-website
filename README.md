@@ -39,7 +39,8 @@ Assignment 2
 4. To make our website dynamic, we used ajax on the order form page (order-page.php, order-page.js). When a user types in their zip code, the city, state, and country will automatically fill-in (getCityState.php). Additionally, the corresponding tax rate will show up (getTax.php). As another feature, when the user updates the quantity of the product they want, the price on the subtotal will increase accordingly (getProduct.php). Once they choose their shipping method, the total price will add up the subtotal, tax, and shipping together. 
 
 Assignment 3
-1.
+
+1. HistoryServlet.java is the servlet that works with session data and adds Product names to a list saved in the session to keep track of the 5 (or less) most recent products viewed. The user can view what products have recently been viewed by clicking on a "Show Recently Viewed" button on the main Candy Table page. 
 
 2.
 
