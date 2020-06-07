@@ -48,7 +48,7 @@ Assignment 3
 
 Assignment 3
 
-1.
+1. The NewCandyHome.jsp is the jsp file for the listing of products on our home page. It integrates html and java get and set operations to and from a java server. In the java server there are setters and getters to get and set the information for each product requested from the database.
 
 2.
 
