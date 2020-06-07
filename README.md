@@ -30,14 +30,16 @@ POST - Not necessary to be implemented.
 3. (1) ... (2) In ProductDetails.java, the page will retrieve the product name from the JSON using ProductPageService.java, ProductPageResource.java, and ProductPage.java to grab all the information for that product to generate each individual HTML page after the user clicks on a product on the home page. 
 
  i.    GET
+ 
  ii.   Request URL.
  - http://localhost:11678/candyrusREST/api/ProductDetails/{id} (id being the Product Name)
+ 
  iii.  Sample Response.
  - Response for: http://localhost:11678/candyrusREST/api/ProductDetails/Candy%20Canes
  {"price":"3.56","desc1":"3 pack - 1.75 oz. size","desc2":"Vegetarian, gluten-free and kosher. Jumbo 1.75 oz size","desc3":"Manufactured in a facility that processes: egg, milk, mustard, peanuts, sesame, soy, sulfites, tree nuts and wheat","name":"Candy Canes","image3":"candyImages/candycanes3.png","image2":"candyImages/candycanes2.jpg","image1":"candyImages/CandyCanes.png"}
- iv.  Sample Request (if applicable)
+ 
+iv. Sample Request (if applicable)
 - N/A
-
 
 ## Acknowledgements
 
