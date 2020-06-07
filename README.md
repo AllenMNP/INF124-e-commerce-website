@@ -21,13 +21,13 @@ Assignment 4
 
 2.GET - The Jersey REST API impelementation for GET is implemented in the Maven Project "candyrusREST". The GET method is used when the user clicks on a specific product and performs a GET request and returns the database JSON information for that product id. This allows the client to grab the JSON information to load the HTML for the webpage correctly. If a resource is not found, the page will throw a 404 - Not Found response.
 
-POST -
+POST -  The REST API implementation for POST is implemented in the Maven Project "CandyRest". The post method occurs after the user submits the order form. After the submit happens, the API is called and the order is added into the database. After it is added to the database, then the user is forwarded to the confirmation page.
 
 DELETE - Not necessary to be implemented.
 
 POST - Not necessary to be implemented.
 
-3. (1) ... (2) In ProductDetails.java, the page will retrieve the product name from the JSON using ProductPageService.java, ProductPageResource.java, and ProductPage.java to grab all the information for that product to generate each individual HTML page after the user clicks on a product on the home page. 
+3. (1) The web application has an API called CandyRest that handles all of the POST actions made by the application. In CartServlet.java the user is asked to fill out a form with the user’s order details. After submitting the form, it is forwarded to Checkout.java using RequestDispatcher’s forward method. In Checkout.java, it creates a WebTarget to request from. The WebTarget consists of a link that calls the API. After calling the API and passing a JSON object, it goes to OrderResource.java in the API folder to match the path with a function. It will match it with the function addTodo(), where it will be mapped to an Order object. After the order object is mapped, it calls OrderService.addOrder to add it to the database using prepared statements. Once the add is complete, it will return a response string saying ‘OK’ and forward it to ConfirmationServlet.java. ConfirmationServlet.java is the confirmation page that displays the user’s orders.  (2) In ProductDetails.java, the page will retrieve the product name from the JSON using ProductPageService.java, ProductPageResource.java, and ProductPage.java to grab all the information for that product to generate each individual HTML page after the user clicks on a product on the home page. 
 
  i.    GET
  
@@ -40,6 +40,19 @@ POST - Not necessary to be implemented.
  
 iv. Sample Request (if applicable)
 - N/A
+
+ i.    POST
+ 
+ ii.   Request URL.
+ - http://localhost:8080/CandyRest/api/order
+ 
+ iii.  Sample Response.
+ - Response for: http://localhost:8080/CandyRest/api/order
+ “OK”
+ 
+iv. Sample Request (if applicable)
+- {"firstname":"Allen","lastname":"P","productString":"Skittles/Oreos","phone":"123-123-1231","street":"1 Cornell","zip":"91232","city":"91234","state":"CA","country":"USA","shipping":"standardshipping","cardnumber":"1111-2222-3333-4444","expiration":"11/2020","cvv":"123","total":"20"}
+
 
 ## Acknowledgements
 
@@ -82,6 +95,10 @@ Java Servlets, JDBC, MySql - [geeksforgeeks](https://www.geeksforgeeks.org/java-
 HTML to Servlet - [coderjava](https://www.codejava.net/java-ee/servlet/handling-html-form-data-with-java-servlet)
 
 Submit form programatically - [stackoverflow](https://stackoverflow.com/questions/1691296/how-to-submit-a-form-programmatically-in-java-servlet)
+
+Client Builder - [jax-rs](https://www.logicbig.com/how-to/code-snippets/jcode-jax-rs-client-and-clientbuilder.html)
+
+Convert String to JSON - [java-67](https://www.java67.com/2016/10/3-ways-to-convert-string-to-json-object-in-java.html)
 
 **Photos and Product Descriptions Sources**
 - [Amazon (primary source)](https://www.amazon.com/)
