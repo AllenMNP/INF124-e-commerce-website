@@ -52,7 +52,8 @@ Assignment 3
 
 2.
 
-3.
+3. (1) ... (2) In ProductDetails.java, the page will retrieve the product name from the JSON using ProductPageService.java, ProductPageResource.java, and ProductPage.java to grab all the information for that product to generate each individual HTML page after the user clicks on a product on the home page. 
+
 ## Acknowledgements
 
 Text Entry Allignment on order forms - [stackoverflow post](https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html)
