@@ -19,7 +19,7 @@ Assignment 4
 
 1. The NewCandyHome.jsp is the jsp file for the listing of products on our home page. It integrates html and java get and set operations to and from a java server. In the java server there are setters and getters to get and set the information for each product requested from the database.
 
-2.GET - The Jersey REST API impelementation for GET is implemented in the Maven Project "candyrusREST". The GET method is used when the user clicks on a specific product and performs a GET request and returns the database JSON information for that product id. This allows the client to grab the JSON information to load the HTML for the webpage correctly. If a resource is not found, the page will throw a 404 - Not Found response.
+2. GET - The Jersey REST API impelementation for GET is implemented in the Maven Project "candyrusREST". The GET method is used when the user clicks on a specific product and performs a GET request and returns the database JSON information for that product id. This allows the client to grab the JSON information to load the HTML for the webpage correctly. If a resource is not found, the page will throw a 404 - Not Found response.
 
 POST -  The REST API implementation for POST is implemented in the Maven Project "CandyRest". The post method occurs after the user submits the order form. After the submit happens, the API is called and the order is added into the database. After it is added to the database, then the user is forwarded to the confirmation page.
 
